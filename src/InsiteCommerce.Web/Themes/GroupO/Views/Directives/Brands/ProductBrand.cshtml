@@ -3,7 +3,7 @@
 <span ng-if="!product.brand.logoSmallImagePath || showLogo !== 'true'" ng-bind="product.brand.name"></span>
 [% endcapture %]
 
-<div ng-if="product.brand" class="product-brand" id="tst_product_brand_{{::product.id}}">
+<div ng-if="product.brand" class="product-brand mitta" id="tst_product_brand_{{::product.id}}">
     <a ng-if="product.brand.detailPagePath" ng-href="{{product.brand.detailPagePath}}" title="{{product.brand.name}}">
         [[ProductBrand]]
     </a>
